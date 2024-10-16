@@ -1,0 +1,28 @@
+{
+  "entry": [
+    "next.config.js",
+    "jest.config.js",
+    "tailwind.config.js",
+    "src/app/**/page.{js,jsx,ts,tsx}",
+    "src/app/**/layout.{js,jsx,ts,tsx}"
+  ],
+  "ignorePatterns": ["**/node_modules/**", "public/**"],
+  "ignoreUnimported": [
+    "**/page.{js,jsx,ts,tsx}",
+    "**/layout.{js,jsx,ts,tsx}",
+    "tailwind.config.ts",
+    "jest.config.js",
+    "jest.setup.js",
+    "playwright.config.ts",
+    "src/tests/**"
+  ],
+  "extensions": [".js", ".jsx", ".ts", ".tsx"],
+  "ignoreUnused": [
+    "@typescript-eslint/eslint-plugin",
+    "eslint-plugin-prettier",
+    "next",
+    "prettier-plugin-tailwindcss"
+  ],
+  "ignoreUnresolved": [],
+  "respectGitignore": true
+}

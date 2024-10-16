@@ -6,21 +6,34 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,css,less,sass,scss,json,json5,yml,yaml,md,mdx,graphql}\"",
+    "format:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,css,less,sass,scss,json,json5,yml,yaml,md,mdx,graphql}\"",
+    "unimported:check": "unimported"
   },
   "dependencies": {
+    "next": "14.2.15",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.15"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@evilmartians/lefthook": "^1.7.18",
     "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/react": "18.3.11",
     "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
+    "@typescript-eslint/eslint-plugin": "^8.9.0",
+    "@typescript-eslint/parser": "^8.9.0",
     "eslint": "^8",
-    "eslint-config-next": "14.2.15"
+    "eslint-config-next": "14.2.15",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jest-dom": "^5.4.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-testing-library": "^6.3.0",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.6.3",
+    "unimported": "^1.31.1"
   }
 }
