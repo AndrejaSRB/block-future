@@ -2,14 +2,6 @@
 
 Please include a short summary (additional notes) of the changes which are done in the pull request.
 
-## Changes list
-
-The possible changes types are: fix, feat, chore, docs, config.
-
-- fix(scope of work) - description - (JIRA ticket)
-- feat(scope of work) - description - (JIRA ticket)
-- chore(scope of work) - description - (JIRA ticket)
-
 ## How to test
 
 1. Visit preview branch
